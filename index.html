@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section>
+            <h1>Calculator</h1>
+        </section>
+        <section>
+            <form name="Display">
+                <input type="text" name="display" id="display" value="">
+            </form>
+        </section>
+        <section>
+            <p>
+                <button id="C" type="button" onClick="Display.reset(); Reset()" name="reset" >C</button>
+                <button id="bracket" type="button" onclick="expression('bracket')" value="bracket">()</button>
+                <button id="mod" type="button" onclick="expression('mod')" value="%">%</button>
+                <button id="divide" type="button" onclick="expression('divide')" value="/">/</button>
+            </p>
+            <p>
+                <button id="7" type="button" onclick="expression('7')" value="7">7</button>
+                <button id="8" type="button" onclick="expression('8')" value="8">8</button>
+                <button id="9" type="button" onclick="expression('9')" value="9">9</button>
+                <button id="multiply" type="button" onclick="expression('multiply')" value="*">*</button>
+            </p>
+            <p>
+                <button id="4" type="button" onclick="expression('4')" value="4">4</button>
+                <button id="5" type="button" onclick="expression('5')" value="5">5</button>
+                <button id="6" type="button" onclick="expression('6')" value="6">6</button>
+                <button id="minus" type="button" onclick="expression('minus')" value="-">-</button>
+            </p>
+            <p>
+                <button id="1" type="button" onclick="expression('1')" value="1">1</button>
+                <button id="2" type="button" onclick="expression('2')" value="2">2</button>
+                <button id="3" type="button" onclick="expression('3')" value="3">3</button>
+                <button id="plus" type="button" onclick="expression('plus')" value="+">+</button>
+            </p>
+            <p>
+                <button id="negative" type="button" onclick="expression('negative')" value="-">+/-</button>
+                <button id="0" type="button" onclick="expression('0')" value="0">0</button>
+                <button id="dot" type="button" onclick="expression('dot')" value=".">.</button>
+                <button id="equal" type="button" onclick="result()" form="Display">=</button>
+            </p>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
